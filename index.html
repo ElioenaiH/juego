@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRABAJO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <div>
+    <canvas id="draw"></canvas>
+
+  </div>
+  <div class="content">
+    <p>RESPUESTA</p>
+    <input id="showAnswer" type="text" disabled>
+    <input type="text" class="spacing" maxlength="1" id="answer" >
+    <button id="enter" onclick="game();">ELEGIR</button>
+  </div>
+  </main>
+
+  <div id="winner">
+    <h1>HA TERMINADO EL JUEGO</h1>
+    <p>¿DESEA JUGAR DE NUEVO?.</p>
+    <div>
+      <button class="buttonRepeat" onclick="newGame()">SI</button>
+      <button class="buttonExit" onclick="exit();">NO</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
